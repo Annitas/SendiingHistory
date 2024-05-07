@@ -29,7 +29,7 @@ final class DateTableViewCell: UITableViewCell {
     }()
     let dateLabel: UILabel = {
         let label = UILabel()
-        label.numberOfLines = 0
+        label.numberOfLines = 1
         label.textColor = .black
         label.backgroundColor = .clear
         return label
@@ -69,7 +69,6 @@ final class DateTableViewCell: UITableViewCell {
     override func sizeThatFits(_ size: CGSize) -> CGSize {
         var size = size
         contentView.pin.width(size.width)
-        
         configureSubviews()
         size.height = externalView.frame.maxY + .padding
         

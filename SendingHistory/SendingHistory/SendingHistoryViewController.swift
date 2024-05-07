@@ -31,7 +31,8 @@ final class SendingHistoryViewController: UIViewController {
         view.addSubview(tableView)
         tableView.dataSource = self
         tableView.delegate = self
-        tableView.register(DateTableViewCell.self, forCellReuseIdentifier: String(describing: DateTableViewCell.self))
+        tableView.register(DateTableViewCell.self, 
+                           forCellReuseIdentifier: String(describing: DateTableViewCell.self))
     }
     
     required init?(coder: NSCoder) {
